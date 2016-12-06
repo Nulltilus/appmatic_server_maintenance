@@ -16,6 +16,10 @@ def remove_unused_images():
 		img_array = response.json()[API_IMG_ARRAY_NAME]
 		for curr_dir, sub_folders, files in os.walk(IMAGE_PATH_ON_SERVER):
 			for img in files:
+				if img == "icon.png":
+					continue
+				if img.endswith(".php"):
+					continue
 		    		if not img in img_array:
 		    			try:
 		    				print "\tRemoving " + img + " at " + curr_dir

@@ -3,7 +3,7 @@ import os
 import sys
 
 API_URL = ""
-API_IMG_ARRAY_NAME = "image_in_use"
+API_IMG_ARRAY_NAME = "images_in_use"
 IMAGE_PATH_ON_SERVER = ""
 
 def remove_unused_images():
